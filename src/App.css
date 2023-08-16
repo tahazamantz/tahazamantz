@@ -17,26 +17,6 @@ body {
   text-align: center;
   padding: 2em;
 }
-.section{
-
-  height: 100px;
-  padding-top: 10px;
-  box-shadow: 5px 5px 10px 5px;
-  border-radius: 109px 0px 90px 0px;
-  font-size: 10px;
-  margin: 10px;
-  padding: 50px;
-  background: linear-gradient(to right, rgb(0, 255, 81), rgb(4, 255, 217));
-}
-
-
-.section:hover{
-  border-radius: 109px 0px 90px 0px;
-  font-size: 10px;
-  margin: 10px;
-  padding: 50px;
-  background: linear-gradient(to right, rgb(69, 255, 255), rgb(102, 255, 0));
-}
 
 .logo{
   height: 110px;
@@ -47,12 +27,6 @@ body {
 
 }
 
-.chatdiv{
-  box-shadow: 10px 10px 10px 10px;
-  color: #282c34;
-  margin: 10px;
-  padding: 19px;
-}
 
 .sigin1{
   width: 100px;
@@ -60,20 +34,13 @@ body {
   height: 100px;
 }
 
-p{
-  font-size: 10px;
-  text-align: center;
-  color: white;
-  margin: 0;
-  line-height: 0;
-
-}
 
 a{
+  animation: color 0.5s infinite linear;
+  align-self: self-start;
+  left: 10px;
   display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   padding: 10px;
   border-radius: 50px 0px 50px 0px;
   background-color: transparent; 
@@ -82,12 +49,10 @@ a{
   font-weight: 100px;
   color: rgb(0, 0, 0);
   font-size: 30px;
-  margin: 11px;
+  
   text-decoration: none;
   word-spacing: 1px;
-  padding-bottom: 1px;
-  margin-bottom: 10px;
-}
+  }
 
 
 
@@ -100,10 +65,23 @@ a:hover{
   word-spacing: 1px;
 }
 
+
+.mainchat p{
+ font-family: 10px;
+
+ align-self: flex-end;
+ padding-bottom: 10px;
+ 
+ 
+}
 .mainchat{
-  height:100px;
+  
+  padding: 10px;
+  font-family: fantasy;
+  height: 1000px;
   width:100px;
   font-size: 10px;
+  padding-bottom: 10px;
 }
 h1{
   color: aqua;
@@ -127,12 +105,7 @@ h1{
     scroll-behavior: smooth;
   }
   
-  .maincss{
-    color: #b30000;
-    font-family: fantasy;
   
-    padding-bottom: 100px;
-  }
   .section{
   
     height: 100px;
@@ -141,7 +114,8 @@ h1{
     border-radius: 109px 0px 90px 0px;
     font-size: 10px;
     margin: 10px;
-    padding: 50px;
+    padding: 25px;
+    align-items: flex-start;
     background: linear-gradient(to right, rgb(0, 255, 81), rgb(4, 255, 217));
   }
   
@@ -175,16 +149,21 @@ h1{
     float: left;
     height: 50px;
     width: 100px;
-    left: 750px;
+    left: 1790px;
     top: 725px;
     border-radius: 100px;
     font-size: 25px;
 
     position: absolute;
   }
-
+#p{
+  padding-bottom: 100px;
+  font-family: 'Lobster Two', cursive;
+}
 
   .chatdiv{
+    animation: color 5s infinite linear;
+ 
     border-radius: 100px 0px 100px 0px;
     overflow: auto;
     box-shadow: 10px 10px 10px 10px;
@@ -215,6 +194,7 @@ h1{
   /* Handle */
   ::-webkit-scrollbar-thumb {
     background: red; 
+    
     border-radius: 10px;
   }
   
@@ -226,17 +206,16 @@ h1{
     float: left;
     height: 50px;
     width: 300px;
-    left: 510px;
-    top: 735px;
+    left: 1500px;
+    top: 670px;
     border-radius: 100px 0px 100px 0px;
-    font-size: 50px;
+    font-size: 30px;
+    box-shadow: 5px 0px 10px 9px;
+    color: rgb(0, 217, 255);
+    font-family: 'Lobster Two', cursive;
 
     position: absolute;
 
-  }
- 
-  .form{
-    align-items: center;
   }
   .sigin1{
     width: 100px;
@@ -255,21 +234,22 @@ h1{
   a{
     display: inline-block;
     font-size: 16px;
+    float: left;
     margin: 4px 2px;
     cursor: pointer;
     padding: 10px;
     border-radius: 50px 0px 50px 0px;
     background-color: transparent; 
-    color: black; 
-    border: 2px solid #ff0000;
+    color: rgb(255, 248, 248); 
+    border: 3px solid #ffffff;
     font-weight: 100px;
-    color: rgb(0, 0, 0);
+
     font-size: 30px;
     margin: 11px;
     text-decoration: none;
     word-spacing: 1px;
-    padding-bottom: 1px;
-    margin-bottom: 10px;
+    
+    font-family: 'Lobster Two', cursive;
     
   }
   
@@ -285,13 +265,6 @@ h1{
   }
   .message{
     color: red;
-  }
-  .mainchat{
-    margin-bottom: 10px;
-    padding-bottom: 100px;
-    height:100px;
-    width:100px;
-    font-size: 10px;
   }
   h1{
     color: aqua;
